@@ -1,0 +1,50 @@
+# =====================================================
+# Tools and Software Versions Used in This Project
+# =====================================================
+
+# General Environment
+System: HPC cluster (ROSA, University of Oldenburg)
+OS: Linux
+Shell: Bash
+
+# Assembly
+MEGAHIT v1.2.9
+
+# Binning (via metaWRAP pipeline)
+metaWRAP v1.3.2 (conda-based)
+
+  - MetaBAT2 v2.15
+  - MaxBin2 v2.2.7
+  - CONCOCT v1.1.0
+
+# Multi-sample binning support
+BinChicken (Nature Methods 2023 implementation)
+Version: not explicitly versioned (used as published method)
+
+# Quality Assessment
+CheckM v1.2.3 (foss-2023a module)
+
+# Taxonomic Classification
+GTDB-Tk v2.4.0
+Reference Database: GTDB (release version used on cluster)
+
+# Dereplication
+dRep v3.4.2
+
+  - ANI threshold used: 95%
+  - Clustering approach: global dereplication (all MAGs)
+
+# Supporting Tools
+Miniconda3 v23.5.2
+Python 3.x (via conda environments)
+
+# HPC Job Management
+SLURM workload manager
+
+# Notes
+- All analyses were executed on the ROSA HPC cluster.
+- Module system was used where available.
+- Custom Bash scripts were used for workflow automation.
+- Intermediate files (e.g., work_files) were removed to save disk space.
+
+# =====================================================
